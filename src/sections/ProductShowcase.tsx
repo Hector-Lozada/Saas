@@ -19,7 +19,7 @@ export const ProductShowcase = () => {
           <Image src={WorkSpace} alt='workspace image' className='mt-10'
           priority={true}
           quality={100}/>
-          <Image src={gr} alt='gr photo' height={248} className='absolute -right-36 -top-32'/>
+          <Image src={gr} alt='gr photo' height={148} className='absolute -right-36 -top-32'/>
         </div>
       </div>
     </section>
