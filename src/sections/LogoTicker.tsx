@@ -5,6 +5,11 @@ import echoLogo from '@/assets/logo-echo.png';
 import ftmoLogo from '@/assets/ftmoLogoo.png';
 import funded from '@/assets/fundednext.png';
 import topstep from '@/assets/TopStep-Logo.png';
+import atf from '@/assets/atf.png';
+import mt4 from '@/assets/mt4.png';
+import mt5 from '@/assets/mt5.png';
+import fp from '@/assets/fp-.png';
+import tv from '@/assets/tv.png';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -24,27 +29,26 @@ export const LogoTicker = () => {
             repeatType: "loop",
             }}
             >
-            <Image src={acmeLogo} alt="Acme Logo" className="logo-ticker-image" />
-            <Image src={echoLogo} alt="Acme Logo" className="logo-ticker-image"/>
             <Image src={ftmoLogo} alt="FTMO Logo" className="logo-ticker-image"/>
             <Image src={funded} alt="Funded Next Logo" className="logo-ticker-image" />
             <Image src={topstep} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={topstep} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={topstep} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={topstep} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={topstep} alt="Topstep Logo" className="logo-ticker-image"/>
+            <Image src={atf} alt="Topstep Logo" className="logo-ticker-image"/>
+            <Image src={mt4} alt="Topstep Logo" className="logo-ticker-image"/>
+            <Image src={mt5} alt="Topstep Logo" className="logo-ticker-image"/>
+            <Image src={fp} alt="Topstep Logo" className="logo-ticker-image"/>
+            <Image src={tv} alt="Topstep Logo" className="logo-ticker-image"/>
 
             {/*Segundo carrousel */}
 
-            <Image src={acmeLogo} alt="Acme Logo" className="logo-ticker-image" />
-            <Image src={echoLogo} alt="Acme Logo" className="logo-ticker-image"/>
+
             <Image src={ftmoLogo} alt="FTMO Logo" className="logo-ticker-image"/>
             <Image src={funded} alt="Funded Next Logo" className="logo-ticker-image" />
             <Image src={topstep} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={topstep} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={topstep} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={topstep} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={topstep} alt="Topstep Logo" className="logo-ticker-image"/>
+            <Image src={atf} alt="Topstep Logo" className="logo-ticker-image"/>
+            <Image src={mt4} alt="Topstep Logo" className="logo-ticker-image"/>
+            <Image src={mt5} alt="Topstep Logo" className="logo-ticker-image"/>
+            <Image src={fp} alt="Topstep Logo" className="logo-ticker-image"/>
+            <Image src={tv} alt="Topstep Logo" className="logo-ticker-image"/>
           </motion.div>
         </div>
       </div>
