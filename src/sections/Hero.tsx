@@ -18,7 +18,7 @@ export const Hero = () => {
               hgjhgjhgjhg
             </p>
             <div className='flex gap-1 items-center mt-[30px]'>
-              <button className='btn btn-primary'>Empieza Ahora</button>
+              <button className='btn btn-primary'>Empiezar Ahora</button>
               <button className="btn btn-text gap-1">
                 <span>Saber más</span>
                 <ArrowIcon className="h-5 w-5"/>
