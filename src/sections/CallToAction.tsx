@@ -2,10 +2,10 @@ import ArrowRight from '@/assets/arrow-right.svg';
 
 export const CallToAction = () => {
   return (
-    <section className="bg-gradient-to-b from-white to-[#D2DCFF] PY-24">
+    <section className="bg-white py-24">
       <div className="container">
         <div className='section-heading'>
-          <h2 className="section-title">Ingresa a una clase GRATIS HOY</h2>
+          <h2 className="section-title text-black">Ingresa a una clase GRATIS HOY</h2>
           <p className="section-description mt-5">
             {" "}
             kasjfkjfhlkashf

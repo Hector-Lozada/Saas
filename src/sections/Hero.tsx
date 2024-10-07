@@ -4,32 +4,32 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <section className='pt-8 pb-20 md:pb-10 md:pt-5 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_66%)] overflow-clip'>
+    <section id="hero" className='pt-8 pb-20 md:pb-10 md:pt-5 bg-white overflow-clip'>
       <div className="container">
         <div className='md:flex items-center'>
           <div className='md:w-[478px]'>
-            <div className="tag">
+            <div className="tag bg-black text-white">
               Version 2.0
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-black mt-6">
               Camina hacia el éxito
             </h1>
-            <p className='text-xl text-[#010D3E] tracking-tight mt-6'>
+            <p className='text-xl text-black tracking-tight mt-6'>
               hgjhgjhgjhg
             </p>
             <div className='flex gap-1 items-center mt-[30px]'>
-              <button className='btn btn-primary'>Empiezar Ahora</button>
-              <button className="btn btn-text gap-1">
+              <button className='btn btn-primary'>Empezar Ahora</button>
+              <button className="btn btn-text">
                 <span>Saber más</span>
-                <ArrowIcon className="h-5 w-5"/>
+                <ArrowIcon className="h-5 w-5 fill-black"/>
               </button>
             </div>
           </div>
           <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
-          <Image src={cogImage} alt="etg" className='md:absolute md:h-full md:w-auto md:max-w-none md:left-6' quality={100} priority={true}/>
+            <Image src={cogImage} alt="etg" className='md:absolute md:h-full md:w-auto md:max-w-none md:left-6' quality={100} priority={true}/>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
   );
 };

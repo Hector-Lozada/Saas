@@ -9,7 +9,7 @@ export const Header = () => {
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
         <p className="text-white/60 hidden md:block">Transforma tu futuro financiero con Elegance Trading Group.</p>
       <div className="inline-flex gap-1 items-center">
-        <p>Empezar Ahora</p>
+        <a href=''>Empezar Ahora</a>
         <ArrowRight className="h-4 w-4 inline-flex justify-center items-center" />
       </div>
     </div>
@@ -19,12 +19,13 @@ export const Header = () => {
           <Image src={Logo} alt="Logo ETG" height={160} width=  {160}/>
           <MenuIcon className="h-5 w-5 md:hidden" />
           <nav className="hidden md:flex gap-6 text-black/60 items-center">
-            <a href="#">Sobre Nosotros</a>
+            <a href="#hero">Sobre ETG</a>
             <a href="#">Carácteristicas</a>
-            <a href="#">Clientes</a>
+            <a href="#testimonials">Clientes</a>
+            <a href="#precio">Precios</a>
+            <a href="#">FAQ</a>
             <a href="#">Novedades</a>
-            <a href="#">Ayuda</a>
-            <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">Empezar Ahora</button>
+            <a href="" className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">Empezar Ahora</a>
           </nav>
         </div>
       </div>

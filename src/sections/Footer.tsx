@@ -12,7 +12,7 @@ export const Footer = () => {
           <Image src={logo} height={160} width={160} alt='Logo ETG'/>
         </div>
         <nav className='flex flex-col md:flex-row md:justify-center gap-6 mt-6'>
-          <a href="#">Sobre Nosotros</a>
+          <a href="#">Sobre ETG</a>
           <a href="#">Características</a>
           <a href="#">Clientes</a>
           <a href="#">Precios</a>
@@ -20,9 +20,9 @@ export const Footer = () => {
           <a href="#">Novedades</a>
         </nav>
         <div className='flex justify-center gap-6 mt-6'>
-          <SocialInsta/>
-          <SocialWha/>
-          <SocialTele/>
+          <a href="https://www.instagram.com/etg.forexx/" target='_blank'><SocialInsta/></a>
+          <a href=""><SocialWha/></a>
+          <a href=""><SocialTele/></a>
         </div>
       </div>
       <p className='mt-6'>&copy; 2024 Elegance Trading Group. Todos los derechos reservados.</p>

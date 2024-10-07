@@ -15,7 +15,7 @@ import { motion } from 'framer-motion';
 
 export const LogoTicker = () => {
   return (
-    <div className="py-8 md:py-12 bg-white">
+    <div className="py-8 md:py-12 bg-white"> {/* Fondo blanco */}
       <div className="container">
         <div className="flex overflow-hidden [mask-image: linear-gradient(to_right,transparent,black,transparent)]">
           <motion.div className='flex gap-14 flex-none pr-14' 
@@ -32,26 +32,24 @@ export const LogoTicker = () => {
             <Image src={ftmoLogo} alt="FTMO Logo" className="logo-ticker-image"/>
             <Image src={funded} alt="Funded Next Logo" className="logo-ticker-image" />
             <Image src={topstep} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={atf} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={mt4} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={mt5} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={fp} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={tv} alt="Topstep Logo" className="logo-ticker-image"/>
+            <Image src={atf} alt="ATF Logo" className="logo-ticker-image"/>
+            <Image src={mt4} alt="MT4 Logo" className="logo-ticker-image"/>
+            <Image src={mt5} alt="MT5 Logo" className="logo-ticker-image"/>
+            <Image src={fp} alt="FP Logo" className="logo-ticker-image"/>
+            <Image src={tv} alt="Trading View Logo" className="logo-ticker-image"/>
 
-            {/*Segundo carrousel */}
-
-
+            {/* Segundo carrusel */}
             <Image src={ftmoLogo} alt="FTMO Logo" className="logo-ticker-image"/>
             <Image src={funded} alt="Funded Next Logo" className="logo-ticker-image" />
             <Image src={topstep} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={atf} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={mt4} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={mt5} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={fp} alt="Topstep Logo" className="logo-ticker-image"/>
-            <Image src={tv} alt="Topstep Logo" className="logo-ticker-image"/>
+            <Image src={atf} alt="ATF Logo" className="logo-ticker-image"/>
+            <Image src={mt4} alt="MT4 Logo" className="logo-ticker-image"/>
+            <Image src={mt5} alt="MT5 Logo" className="logo-ticker-image"/>
+            <Image src={fp} alt="FP Logo" className="logo-ticker-image"/>
+            <Image src={tv} alt="Trading View Logo" className="logo-ticker-image"/>
           </motion.div>
         </div>
       </div>
     </div>
-);
+  );
 };
