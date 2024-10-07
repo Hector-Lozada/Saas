@@ -11,19 +11,21 @@ export const Footer = () => {
         <div className='inline-flex relative'>
           <Image src={logo} height={160} width={160} alt='Logo ETG'/>
         </div>
-        <nav>
+        <nav className='flex flex-col md:flex-row md:justify-center gap-6 mt-6'>
           <a href="#">Sobre Nosotros</a>
           <a href="#">Características</a>
           <a href="#">Clientes</a>
           <a href="#">Precios</a>
           <a href="#">FAQ</a>
-          <a href="#">Carrera</a>
+          <a href="#">Novedades</a>
         </nav>
-        <SocialInsta/>
-        <SocialWha/>
-        <SocialTele/>
+        <div className='flex justify-center gap-6 mt-6'>
+          <SocialInsta/>
+          <SocialWha/>
+          <SocialTele/>
+        </div>
       </div>
-      <p>&copy; 2024 Elegance Trading Group. Todos los derechos reservados.</p>
+      <p className='mt-6'>&copy; 2024 Elegance Trading Group. Todos los derechos reservados.</p>
     </footer>
   );
 };
