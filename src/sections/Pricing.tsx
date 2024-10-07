@@ -80,7 +80,7 @@ export const Pricing = () => {
                   <span className='text-4xl font-bold tracking-tighter leading-none'>${monthlyPrice}</span>
                   <span className={twMerge("tracking-tighter font-bold text-black/50", inverse === true && 'text-white/60')}>/mes</span>
                 </div>
-                <button className={twMerge("btn btn-primary w-full mt-[30px]", inverse === true && 'text-black bg-white')}>{buttonText}</button>
+                <a href="https://wa.link/infvum" target='_blank' className={twMerge("btn btn-primary w-full mt-[30px]", inverse === true && 'text-black bg-white')}>{buttonText}</a>
                 <ul className='flex flex-col gap-5 mt-8'>
                   {features.map((feature, featureIndex) => (
                     <li key={featureIndex} className='text-sm flex items-center gap-4'>
