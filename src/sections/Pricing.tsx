@@ -9,13 +9,13 @@ const pricingTiers = [
     popular: false,
     inverse: false,
     features: [
-      "Up to 5 project members",
-      "Unlimited tasks and projects",
-      "2GB storage",
-      "Integrations",
-      "Basic support",
+      "Acceso a Mentorías Grupales",
+      "Material de estudio básico",
+      "Soporte básico por correo",
+      "Acceso a Comunidad",
+      "Cursos de Introducción al Trading",
     ],
-  },
+  },  
   {
     title: "Advanced",
     monthlyPrice: 50,
@@ -23,15 +23,14 @@ const pricingTiers = [
     popular: true,
     inverse: true,
     features: [
-      "Up to 50 project members",
-      "Unlimited tasks and projects",
-      "50GB storage",
-      "Integrations",
-      "Priority support",
-      "Advanced support",
-      "Export support",
+      "Acceso a Mentorías Grupales e Individuales",
+      "Material de estudio avanzado",
+      "Soporte prioritario",
+      "Acceso completo a Comunidad",
+      "Estrategias avanzadas ",
+      "Sesiones de análisis en vivo",
     ],
-  },
+  },  
   {
     title: "Premium",
     monthlyPrice: 100,
@@ -39,18 +38,16 @@ const pricingTiers = [
     popular: false,
     inverse: false,
     features: [
-      "Up to 5 project members",
-      "Unlimited tasks and projects",
-      "200GB storage",
-      "Integrations",
-      "Dedicated account manager",
-      "Custom fields",
-      "Advanced analytics",
-      "Export capabilities",
-      "API access",
-      "Advanced security features",
+      "Mentoría personalizada 1 a 1",
+      "Acceso exclusivo a estrategias profesionales",
+      "Soporte dedicado 24/7",
+      "Análisis de mercado en tiempo real",
+      "Acceso a señales premium",
+      "Simuladores avanzados de Trading",
+      "Cuentas de fondeo"
     ],
-  },
+  }
+  
 ];
 
 export const Pricing = () => {
@@ -59,7 +56,7 @@ export const Pricing = () => {
       <div className='container'>
         <div className='section-heading'>
           <h2 className="section-title text-black">Precios</h2>
-          <p className="section-description">djnckdjc</p>
+          <p className="section-description">Elije el que mejor se adapte a tus necesidades</p>
         </div>
         <div className='flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center'>
           {pricingTiers.map(

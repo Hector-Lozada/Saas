@@ -8,19 +8,19 @@ export const Hero = () => {
       <div className="container">
         <div className='md:flex items-center'>
           <div className='md:w-[478px]'>
-            <div className="tag bg-black text-white">
-              Version 2.0
+            <div className="tag bg-white text-black">
+              ¿Quienes somos y qué hacemos?
             </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-black mt-6">
               Camina hacia el éxito
             </h1>
             <p className='text-xl text-black tracking-tight mt-6'>
-              hgjhgjhgjhg
+            Educamos a las personas en trading e inversiones para generar ingresos pasivos y activos de manera inteligente y eficaz. Nuestra misión es ayudarte a lograr la libertad financiera mediante herramientas innovadoras y estrategias personalizadas.
             </p>
             <div className='flex gap-1 items-center mt-[30px]'>
-              <button className='btn btn-primary'>Empezar Ahora</button>
+              <a href="https://wa.link/infvum" target='_blank' className='btn btn-primary'>Empezar Ahora</a>
               <button className="btn btn-text">
-                <span>Saber más</span>
+                <a href='https://wa.link/zuvfrc' target='_blank'>Saber más</a>
                 <ArrowIcon className="h-5 w-5 fill-black"/>
               </button>
             </div>

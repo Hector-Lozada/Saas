@@ -14,60 +14,62 @@ import React from "react";
 
 const testimonials = [
   {
-    text: "As a seasoned designer always on the lookout for innovative tools, Framer.com instantly grabbed my attention.",
+    text: "Como trader principiante, esta empresa me ha ayudado a entender los mercados de una manera clara y sencilla. ¡Estoy obteniendo mis primeros resultados positivos!",
     imageSrc: avatar1.src,
-    name: "Jamie Rivera",
-    username: "@jamietechguru00",
+    name: "Juan Pérez",
+    username: "@juanperez_trader",
   },
   {
-    text: "Our team's productivity has skyrocketed since we started using this tool. ",
+    text: "Gracias a su enfoque práctico y mentorías en tiempo real, he mejorado mis estrategias de trading y ahora soy mucho más rentable.",
     imageSrc: avatar2.src,
-    name: "Josh Smith",
-    username: "@jjsmith",
+    name: "Carla Gómez",
+    username: "@carlagomez_fx",
   },
   {
-    text: "This app has completely transformed how I manage my projects and deadlines.",
+    text: "Nunca imaginé que podría aprender a hacer trading de manera tan eficiente. El soporte y las herramientas que ofrecen son de primera calidad.",
     imageSrc: avatar3.src,
-    name: "Morgan Lee",
-    username: "@morganleewhiz",
+    name: "Luis Martínez",
+    username: "@luism_trading",
   },
   {
-    text: "I was amazed at how quickly we were able to integrate this app into our workflow.",
+    text: "Me han dado la confianza y el conocimiento que necesitaba para empezar a generar ingresos consistentes con mis inversiones.",
     imageSrc: avatar4.src,
-    name: "Casey Jordan",
-    username: "@caseyj",
+    name: "Sofía Ramírez",
+    username: "@sofiaramirez_fx",
   },
   {
-    text: "Planning and executing events has never been easier. This app helps me keep track of all the moving parts, ensuring nothing slips through the cracks.",
+    text: "La educación que brindan es clara, estructurada y llena de ejemplos prácticos. He visto un cambio significativo en mis operaciones.",
     imageSrc: avatar5.src,
-    name: "Taylor Kim",
-    username: "@taylorkimm",
+    name: "Pedro Sánchez",
+    username: "@pedrosanchez_trader",
   },
   {
-    text: "The customizability and integration capabilities of this app are top-notch.",
+    text: "Las sesiones de mentoría grupal han sido un gran impulso para entender las dinámicas del mercado y cómo tomar decisiones inteligentes.",
     imageSrc: avatar6.src,
-    name: "Riley Smith",
-    username: "@rileysmith1",
+    name: "Ana Fernández",
+    username: "@anafernandez_trading",
   },
   {
-    text: "Adopting this app for our team has streamlined our project management and improved communication across the board.",
+    text: "La empresa me ha permitido desarrollar estrategias de trading sólidas y consistentes. El material educativo es insuperable.",
     imageSrc: avatar7.src,
-    name: "Jordan Patels",
-    username: "@jpatelsdesign",
+    name: "Fernando López",
+    username: "@fernandolopez_fx",
   },
   {
-    text: "With this app, we can easily assign tasks, track progress, and manage documents all in one place.",
+    text: "Desde que me uní a este programa, he logrado alcanzar mis objetivos financieros mucho más rápido de lo que imaginé. ¡Lo recomiendo al 100%!",
     imageSrc: avatar8.src,
-    name: "Sam Dawson",
-    username: "@dawsontechtips",
+    name: "María Torres",
+    username: "@mariatorres_trader",
   },
   {
-    text: "Its user-friendly interface and robust features support our diverse needs.",
+    text: "La flexibilidad del contenido y la disponibilidad de los mentores han sido clave para mejorar mis resultados como trader.",
     imageSrc: avatar9.src,
-    name: "Casey Harper",
-    username: "@casey09",
+    name: "Javier Ramírez",
+    username: "@javiramirez_trader",
   },
 ];
+
+
 
 const firstColumn = testimonials.slice(0,3);
 const secondColumn = testimonials.slice(3,6);
@@ -124,8 +126,8 @@ export const Testimonials = () => {
           <div className="flex justify-center">
             <div className="tag">Testimonios</div>
           </div>
-          <h2 className="section-title text-black">Lo que dicen        nuestros usuarios</h2>
-          <p className="section-description mt-5">jcjfjhgjhgjhgjg</p>
+          <h2 className="section-title text-black">Lo que dicen nuestros usuarios</h2>
+          <p className="section-description mt-5">"Las experiencias de nuestros clientes</p>
         </div>
         <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]">
           <TestimonialsColumn testimonials={firstColumn} duration={15}/>
