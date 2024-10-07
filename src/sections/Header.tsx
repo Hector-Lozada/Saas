@@ -14,6 +14,10 @@ export const Header = () => {
     setMenuOpen(!menuOpen); // Cambiar el estado del menú
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false); // Cerrar el menú
+  };
+
   return (
     <header className="sticky top-0 backdrop-blur-sm z-20">
       {/* Barra superior */}
@@ -57,13 +61,13 @@ export const Header = () => {
       {/* Menú desplegable móvil */}
       <div className={`md:hidden transition-transform duration-300 ${menuOpen ? 'block' : 'hidden'}`}>
         <nav className="bg-white shadow-lg p-5">
-          <a href="#hero" className="block py-2">Sobre ETG</a>
-          <a href="#analisis" className="block py-2">Análisis</a>
-          <a href="#testimonials" className="block py-2">Clientes</a>
-          <a href="#precio" className="block py-2">Precios</a>
-          <a href="https://wa.link/qao0hh" target="_blank" className="block py-2">FAQ</a>
-          <a href="https://t.me/+WiOuYTsG0uZhMDRh" target="_blank" className="block py-2">Novedades</a>
-          <a href="https://wa.link/infvum" target="_blank" className="bg-black text-white px-4 py-2 rounded-lg font-medium block mt-2">
+          <a href="#hero" className="block py-2" onClick={closeMenu}>Sobre ETG</a>
+          <a href="#analisis" className="block py-2" onClick={closeMenu}>Análisis</a>
+          <a href="#testimonials" className="block py-2" onClick={closeMenu}>Clientes</a>
+          <a href="#precio" className="block py-2" onClick={closeMenu}>Precios</a>
+          <a href="https://wa.link/qao0hh" target="_blank" className="block py-2" onClick={closeMenu}>FAQ</a>
+          <a href="https://t.me/+WiOuYTsG0uZhMDRh" target="_blank" className="block py-2" onClick={closeMenu}>Novedades</a>
+          <a href="https://wa.link/infvum" target="_blank" className="bg-black text-white px-4 py-2 rounded-lg font-medium block mt-2" onClick={closeMenu}>
             Empezar Ahora
           </a>
         </nav>
