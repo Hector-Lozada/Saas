@@ -127,7 +127,7 @@ export const Testimonials = () => {
             <div className="tag">Testimonios</div>
           </div>
           <h2 className="section-title text-black">Lo que dicen nuestros usuarios</h2>
-          <p className="section-description mt-5">"Las experiencias de nuestros clientes</p>
+          <p className="section-description mt-5">Las experiencias de nuestros clientes</p>
         </div>
         <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]">
           <TestimonialsColumn testimonials={firstColumn} duration={15}/>
