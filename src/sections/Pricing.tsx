@@ -15,6 +15,7 @@ const pricingTiers = [
       "Acceso a Comunidad",
       "Cursos de Introducción al Trading",
     ],
+    link: "https://wa.link/saj0qm",
   },  
   {
     title: "Advanced",
@@ -30,6 +31,7 @@ const pricingTiers = [
       "Estrategias avanzadas ",
       "Sesiones de análisis en vivo",
     ],
+    link: "https://wa.link/3pkhpr",
   },  
   {
     title: "Premium",
@@ -46,6 +48,7 @@ const pricingTiers = [
       "Simuladores avanzados de Trading",
       "Cuentas de fondeo"
     ],
+    link: "https://wa.link/7jlzbj",
   }
   
 ];
@@ -61,7 +64,7 @@ export const Pricing = () => {
         <div className='flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center'>
           {pricingTiers.map(
             (
-              { title, monthlyPrice, buttonText, popular, inverse, features },
+              { title, monthlyPrice, buttonText, popular, inverse, features, link },
               index
             ) => (
               <div key={index} className={twMerge("card", inverse === true && 'border-black bg-black text-white')}>
@@ -80,7 +83,7 @@ export const Pricing = () => {
                   <span className='text-4xl font-bold tracking-tighter leading-none'>${monthlyPrice}</span>
                   <span className={twMerge("tracking-tighter font-bold text-black/50", inverse === true && 'text-white/60')}>/mes</span>
                 </div>
-                <a href="https://wa.link/infvum" target='_blank' className={twMerge("btn btn-primary w-full mt-[30px]", inverse === true && 'text-black bg-white')}>{buttonText}</a>
+                <a href={link} target='_blank' className={twMerge("btn btn-primary w-full mt-[30px]", inverse === true && 'text-black bg-white')}>{buttonText}</a>
                 <ul className='flex flex-col gap-5 mt-8'>
                   {features.map((feature, featureIndex) => (
                     <li key={featureIndex} className='text-sm flex items-center gap-4'>
