@@ -3,7 +3,8 @@ import { useState } from 'react';
 import ArrowIcon from '@/assets/arrow-right.svg';
 import cogImage from '@/assets/overview.png';
 import Image from "next/image";
-import Modal from './../components/modules/Modal';
+import Modal from '../components/modules/Modal'; // Importa el Modal
+
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -22,7 +23,7 @@ export const Hero = () => {
               Educamos a las personas en trading e inversiones para generar ingresos pasivos y activos de manera inteligente y eficaz. Nuestra misión es ayudarte a lograr la libertad financiera mediante herramientas innovadoras y estrategias personalizadas.
             </p>
             <div className='flex gap-1 items-center mt-[30px]'>
-              <a href="https://wa.link/infvum" target='_blank' className='btn btn-primary'>Empezar Ahora</a>
+              <a href="#precio" className='btn btn-primary'>Empezar Ahora</a>
               <button 
                 className="btn btn-text flex items-center"
                 onClick={() => setIsModalOpen(true)} // Abre el modal al hacer clic

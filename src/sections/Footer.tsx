@@ -3,6 +3,7 @@ import Image from 'next/image';
 import SocialInsta from '@/assets/social-insta.svg';
 import SocialWha from '@/assets/social-whatsapp.svg';
 import SocialTele from '@/assets/social-telegram.svg';
+import Discord from '@/assets/discord.svg';
 
 export const Footer = () => {
   return (
@@ -23,6 +24,7 @@ export const Footer = () => {
           <a href="https://www.instagram.com/etg.forexx/" target='_blank'><SocialInsta/></a>
           <a href="https://wa.link/qao0hh" target='_blank'><SocialWha/></a>
           <a href="https://t.me/elegancetg" target='_blank'><SocialTele/></a>
+          <a href="https://discord.gg/BvET9RcR2F"><Discord/></a>
         </div>
       </div>
       <p className='mt-6'>&copy; 2024 Elegance Trading Group. Todos los derechos reservados.</p>

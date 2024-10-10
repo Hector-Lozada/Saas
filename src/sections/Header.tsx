@@ -24,7 +24,7 @@ export const Header = () => {
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
         <p className="text-white/60 hidden md:block">Transforma tu futuro financiero con Elegance Trading Group.</p>
         <div className="inline-flex gap-1 items-center">
-          <a href="https://wa.link/infvum" target="_blank">Empezar Ahora</a>
+          <a href="#precio">Empezar Ahora</a>
           <ArrowRight className="h-4 w-4 inline-flex justify-center items-center" />
         </div>
       </div>
@@ -50,7 +50,7 @@ export const Header = () => {
               <a href="#precio">Precios</a>
               <a href="https://wa.link/qao0hh" target="_blank">FAQ</a>
               <a href="https://t.me/+WiOuYTsG0uZhMDRh" target="_blank">Novedades</a>
-              <a href="https://wa.link/infvum" target="_blank" className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">
+              <a href="#precio" className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">
                 Empezar Ahora
               </a>
             </nav>
@@ -67,7 +67,7 @@ export const Header = () => {
           <a href="#precio" className="block py-2" onClick={closeMenu}>Precios</a>
           <a href="https://wa.link/qao0hh" target="_blank" className="block py-2" onClick={closeMenu}>FAQ</a>
           <a href="https://t.me/+WiOuYTsG0uZhMDRh" target="_blank" className="block py-2" onClick={closeMenu}>Novedades</a>
-          <a href="https://wa.link/infvum" target="_blank" className="bg-black text-white px-4 py-2 rounded-lg font-medium block mt-2" onClick={closeMenu}>
+          <a href="#precio" className="bg-black text-white px-4 py-2 rounded-lg font-medium block mt-2" onClick={closeMenu}>
             Empezar Ahora
           </a>
         </nav>

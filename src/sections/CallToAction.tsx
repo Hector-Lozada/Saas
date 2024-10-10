@@ -12,7 +12,7 @@ export const CallToAction = () => {
           </p>
         </div>
         <div className="flex gap-2 mt-10 justify-center">
-          <a href='https://wa.link/infvum' target='_blank' className="btn btn-primary">Empiezar Ahora</a>
+          <a href='#precio' className="btn btn-primary">Empiezar Ahora</a>
           <button className="btn btn-text">
             <a href='https://hector-portafolio.netlify.app/' target='_blank'>Conoce a tu mentor</a>
             <ArrowRight className='h-5 w-5' />
