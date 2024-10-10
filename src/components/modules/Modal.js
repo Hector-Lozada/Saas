@@ -20,13 +20,23 @@ const Modal = ({ isOpen, onClose, children }) => {
         </div>
 
         <div className="flex justify-end p-4">
-          <button
-            onClick={onClose}
+            <a
+            href="#precio"
             className="px-4 py-2 btn btn-primary rounded hover:bg-gray-300 hover:text-black"
-          >
-            Cerrar
-          </button>
+            onClick={() => {
+            onClose(); // Cierra el modal
+            }}
+            >
+              Empezar Ahora
+            </a>
+            <button
+            onClick={onClose}
+            className="px-4 py-2 btn btn-text rounded"
+            >
+              Cerrar
+            </button>
         </div>
+
       </div>
     </div>
   );
