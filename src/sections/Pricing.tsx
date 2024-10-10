@@ -3,6 +3,7 @@ import { useState } from 'react';
 import CheckIcon from '@/assets/check.svg';
 import { twMerge } from 'tailwind-merge';
 import {PayPalButton} from '../components/PaypalButton';
+import Adver from '@/assets/adver.svg';
 
 
 interface PricingTier {
@@ -130,10 +131,15 @@ export const Pricing = () => {
       {showModal && selectedTier && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-[400px]">
+          <div className='gap-1 mb-8'>
+              <div className='flex items-center gap-1'>
+                <Adver />
+                <span className='font-bold'>Importante:</span>
+              </div>
+              <span>Una vez realizado el pago, tomar captura y enviar por medios oficiales.</span>
+          </div>
+
             <h3 className="text-xl font-semibold mb-4">Suscribirse al plan {selectedTier.title}</h3>
-            <p className="mb-4">
-              Confirma que deseas suscribirte al plan <strong>{selectedTier.title}</strong>.
-            </p>
             {/* Botones de PayPal para el plan seleccionado */}
             <PayPalButton planId={selectedTier.planId} />
             <div className="flex justify-end gap-2 mt-4">
