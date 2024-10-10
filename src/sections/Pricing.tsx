@@ -2,7 +2,8 @@
 import { useState } from 'react';
 import CheckIcon from '@/assets/check.svg';
 import { twMerge } from 'tailwind-merge';
-import {PayPalButton} from '../components/PaypalButton' // Importa el nuevo componente de PayPal
+import {PayPalButton} from '../components/PaypalButton';
+
 
 interface PricingTier {
   title: string;

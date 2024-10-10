@@ -1,4 +1,14 @@
+"use client";
 import { useEffect } from 'react';
+
+// Declare the `paypal` property on the `window` object to avoid TypeScript errors
+declare global {
+  interface Window {
+    paypal: {
+      Buttons: any; // You can be more specific here if you know the shape of the object
+    };
+  }
+}
 
 interface PayPalButtonProps {
   planId: string;
@@ -17,12 +27,12 @@ export const PayPalButton = ({ planId }: PayPalButtonProps) => {
           layout: 'vertical',
           label: 'subscribe',
         },
-        createSubscription: function (data, actions) {
+        createSubscription: function (data: any, actions: any) {
           return actions.subscription.create({
             plan_id: planId,
           });
         },
-        onApprove: function (data, actions) {
+        onApprove: function (data: any, actions: any) {
           alert(`Suscripción completada. ID: ${data.subscriptionID}`);
         },
       }).render(`#paypal-button-container-${planId}`);
