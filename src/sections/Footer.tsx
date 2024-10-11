@@ -17,8 +17,8 @@ export const Footer = () => {
             <a href="#analisis">Análisis</a>
             <a href="#testimonials">Clientes</a>
             <a href="#precio">Precios</a>
-            <a href="https://wa.link/qao0hh" target='_blank'>FAQ</a>
-            <a href="https://t.me/+WiOuYTsG0uZhMDRh" target='_blank'>Novedades</a>
+            <a href="https://t.me/+WiOuYTsG0uZhMDRh" target='_blank'>FAQ</a>
+            <a href="https://whatsapp.com/channel/0029Vao6vW6GehEDuHtQdX17" target='_blank'>Novedades</a>
         </nav>
         <div className='flex justify-center gap-6 mt-6'>
           <a href="https://www.instagram.com/etg.forexx/" target='_blank'><SocialInsta/></a>

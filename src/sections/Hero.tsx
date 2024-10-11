@@ -3,7 +3,7 @@ import { useState } from 'react';
 import ArrowIcon from '@/assets/arrow-right.svg';
 import cogImage from '@/assets/overview.png';
 import Image from "next/image";
-import Modal from '../components/modules/Modal'; // Importa el Modal
+import Close from '@/assets/close.svg'
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,23 +29,33 @@ export const Hero = () => {
                 onClick={() => setIsModalOpen(true)} // Abre el modal al hacer clic
               >
                 Saber más
-                <ArrowIcon className="h-5 w-5 fill-black ml-2"/>
+                <ArrowIcon className="h-5 w-5 fill-black ml-2" />
               </button>
             </div>
           </div>
           <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
-            <Image src={cogImage} alt="etg" className='md:absolute md:h-full md:w-auto md:max-w-none md:left-6' quality={100} priority={true}/>
+            <Image src={cogImage} alt="etg" className='md:absolute md:h-full md:w-auto md:max-w-none md:left-6' quality={100} priority={true} />
           </div>
         </div>
       </div>
 
       {/* Modal */}
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-        <h2 className="text-xl font-bold mb-4">¿Qué hacemos en Elegance Trading Group?</h2>
-        <p>
-          En Elegance Trading Group, capacitamos a personas en trading e inversiones para generar ingresos pasivos y activos de manera eficiente y segura. A través de nuestros programas de formación personalizados, te enseñamos a utilizar herramientas de análisis de mercado, estrategias avanzadas y técnicas probadas para lograr una rentabilidad sostenida. Nuestra misión es guiarte en cada paso hacia la libertad financiera, proporcionando el conocimiento y los recursos necesarios para que tomes decisiones inteligentes. Únete a nuestra comunidad de inversores exitosos y comienza a transformar tu vida financiera hoy mismo.
-        </p>
-      </Modal>
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg shadow-lg max-w-md md:max-w-xl w-full mx-4 md:mx-0 p-6 relative">
+            <button
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
+              onClick={() => setIsModalOpen(false)}
+            >
+              <Close />
+            </button>
+            <h2 className="text-xl font-bold mb-4">¿Qué hacemos en Elegance Trading Group?</h2>
+            <p>
+              En Elegance Trading Group, capacitamos a personas en trading e inversiones para generar ingresos pasivos y activos de manera eficiente y segura. A través de nuestros programas de formación personalizados, te enseñamos a utilizar herramientas de análisis de mercado, estrategias avanzadas y técnicas probadas para lograr una rentabilidad sostenida. Nuestra misión es guiarte en cada paso hacia la libertad financiera, proporcionando el conocimiento y los recursos necesarios para que tomes decisiones inteligentes. Únete a nuestra comunidad de inversores exitosos y comienza a transformar tu vida financiera hoy mismo.
+            </p>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
