@@ -18,15 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
-      <Head>
-        <title>Elegance Trading Group</title>
-        <meta name="description" content="Mejora tu estado financiero" />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4480402395128186"
-          crossOrigin="anonymous"
-        ></script>
-      </Head>
+      <meta name="google-adsense-account" content="ca-pub-4480402395128186"/>
       <body className={clsx(dmSans.className, "")}>
         {children}
       </body>
