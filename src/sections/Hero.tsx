@@ -1,6 +1,7 @@
 "use client";
 import { useState } from 'react';
 import ArrowIcon from '@/assets/arrow-right.svg';
+import Logo from '@/assets/logo.png';
 import cogImage from '@/assets/overview.png';
 import Image from "next/image";
 import Close from '@/assets/close.svg'
@@ -20,7 +21,7 @@ export const Hero = () => {
               Camina hacia el éxito
             </h1>
             <p className='text-xl text-black tracking-tight mt-6'>
-              Elegance Trading Group te ofrece las herramientas y estrategias necesarias para diversificar tus ingresos y alcanzar la libertad financiera. Nos especializamos en capacitación para inversiones y trading, adaptándonos a tus necesidades. Ubícanos en Codesa, Calle F y Calle 7. ¡Empieza hoy mismo!
+            En Elegance Trading Group, somos profesionales apasionados por las inversiones y el trading. Nuestra misión es capacitar a personas de todas las edades para que tomen el control de su futuro financiero. Ofrecemos formación personalizada y estrategias para generar ingresos pasivos y activos en los mercados financieros. ¡Ubícanos en Codesa, Calle F y Calle 7 y empieza hoy mismo!
             </p>
             <div className='flex gap-1 items-center mt-[30px]'>
               <a href="#precio" className='btn btn-primary'>Empezar Ahora</a>
@@ -49,9 +50,15 @@ export const Hero = () => {
             >
               <Close />
             </button>
-            <h2 className="text-xl font-bold mb-4">¿Qué hacemos en Elegance Trading Group?</h2>
+            <div className='flex items-center justify-center mb-5'>
+            <Image src={Logo} alt="Logo ETG" height={160} width={160} />
+            </div>
+            <h2 className="text-xl font-bold mb-4">Nuestro Enfoque</h2>
             <p>
-              En Elegance Trading Group, capacitamos a personas en trading e inversiones para generar ingresos pasivos y activos de manera eficiente y segura. A través de nuestros programas de formación personalizados, te enseñamos a utilizar herramientas de análisis de mercado, estrategias avanzadas y técnicas probadas para lograr una rentabilidad sostenida. Nuestra misión es guiarte en cada paso hacia la libertad financiera, proporcionando el conocimiento y los recursos necesarios para que tomes decisiones inteligentes. Únete a nuestra comunidad de inversores exitosos y comienza a transformar tu vida financiera hoy mismo.
+            Se basa en el conocimiento y la práctica. Ofrecemos cursos, talleres y asesoramiento personalizado que abarcan desde los conceptos básicos del trading hasta las estrategias más avanzadas de inversión. Creemos en la educación financiera como el camino hacia la libertad económica, y estamos aquí para proporcionarte las herramientas necesarias para alcanzar tus metas.
+            </p>
+            <p className='mt-2'>
+            Ya sea que estés iniciando en el mundo del trading o que busques perfeccionar tus habilidades, en Elegance Trading Group te guiamos paso a paso para que puedas tomar decisiones informadas y efectivas en el mercado.
             </p>
           </div>
         </div>
