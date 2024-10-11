@@ -36,7 +36,7 @@ export const Pricing = () => {
         "Cursos de Introducción al Trading",
       ],
       link: "https://wa.link/saj0qm",
-      planId: "P-5EK76737C1327935EM4D57QQ", // Plan ID para el nivel Started
+      planId: "P-0P232153NB4691201M4EJEEA", // Plan ID para el nivel Started
     },
     {
       title: "Advanced",
